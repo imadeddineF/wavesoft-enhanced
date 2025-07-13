@@ -7,7 +7,6 @@ import { CTASection } from "@/components/cta-section"
 
 export default function HomePage() {
   return (
-  <Header />          
     <main className="min-h-screen">
       <HeroSection />
       <FeaturesSection />
@@ -16,7 +15,5 @@ export default function HomePage() {
       <TestimonialsSection />
       <CTASection />
     </main>
-    <CookieConsent />
-  <Footer />
   )
 }

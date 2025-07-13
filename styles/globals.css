@@ -92,3 +92,32 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom gradient backgrounds */
+.gradient-purple-orange {
+  background: linear-gradient(135deg, #8b5cf6 0%, #f97316 100%);
+}
+
+.gradient-purple-blue {
+  background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+}

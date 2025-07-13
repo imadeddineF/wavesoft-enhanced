@@ -1,10 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import "./globals.css"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { CookieConsent } from "@/components/cookie-consent"
+import "@/styles/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
