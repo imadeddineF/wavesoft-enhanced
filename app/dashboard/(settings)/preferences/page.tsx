@@ -26,8 +26,10 @@ import {
   EyeOff,
   Plus,
 } from "lucide-react"
+import { useTheme } from "next-themes"
 
 export default function PreferencesPage() {
+    const { setTheme } = useTheme()
   const [preferences, setPreferences] = useState({
     // Notifications
     emailNotifications: true,
@@ -218,9 +220,9 @@ export default function PreferencesPage() {
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="light">Light</SelectItem>
-                      <SelectItem value="dark">Dark</SelectItem>
-                      <SelectItem value="system">System</SelectItem>
+                      <SelectItem value="light" onClick={() => setTheme("light")}>Light</SelectItem>
+                      <SelectItem value="dark" onClick={() => setTheme("dark")}>Dark</SelectItem>
+                      <SelectItem value="system" onClick={() => setTheme("system")}>System</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
